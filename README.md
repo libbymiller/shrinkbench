@@ -28,7 +28,9 @@ conda install numpy matplotlib pandas
 conda install pytorch torchvision -c pytorch
 
 # With pip
-pip install numpy matplotlib pandas torch torchvision
+virtualenv -p python3 env3
+source env3/bin/activate
+pip install numpy matplotlib pandas torch torchvision jupyter tensorboard tqdm
 ```
 
 then, to install the module itself you just need to clone the repo and  add the parent path it to your `PYTHONPATH`. For example:
